@@ -6,7 +6,7 @@ Your assignment is to conduct a rigorous review, investigation, and empirical ex
 
 ### Research Material Location
 
-All foundation research findings and critique analyses (including the **ULS_Critical_Analysis_Report.docx**) are contained within the folder: `C:\Users\RobMo\OneDrive\Documents\research_data`.
+All foundation research findings and critique analyses (including the **ULS_Critical_Analysis_Report.docx**) are contained within the folder: `C:\Users\RobMo\OneDrive\Documents\Research`.
 
 ### Required Actions and Scope
 
