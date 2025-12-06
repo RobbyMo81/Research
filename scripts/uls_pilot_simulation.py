@@ -3,10 +3,17 @@ ULS Pilot Study Data Simulation
 Generates realistic pilot data based on established effect sizes from literature
 """
 
+import json
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 from scipy import stats
-import json
+
+# Directories
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT_DIR / "data"
+DATA_DIR.mkdir(exist_ok=True)
 
 # Set random seed for reproducibility
 np.random.seed(42)
@@ -239,8 +246,9 @@ if __name__ == '__main__':
     df = generate_full_dataset()
 
     # Save raw data
-    df.to_csv('uls_pilot_data.csv', index=False)
-    print("[OK] Raw data saved to: uls_pilot_data.csv")
+    data_csv = DATA_DIR / 'uls_pilot_data.csv'
+    df.to_csv(data_csv, index=False)
+    print(f"[OK] Raw data saved to: {data_csv.relative_to(ROOT_DIR)}")
 
     # Generate descriptive statistics
     print("\n" + "="*70)
@@ -295,8 +303,9 @@ if __name__ == '__main__':
         'effect_sizes': effect_sizes.to_dict('records')
     }
 
-    with open('uls_pilot_statistics.json', 'w') as f:
+    stats_json = DATA_DIR / 'uls_pilot_statistics.json'
+    with open(stats_json, 'w') as f:
         json.dump(stats_output, f, indent=2)
 
-    print("\n[OK] Statistics saved to: uls_pilot_statistics.json")
+    print(f"\n[OK] Statistics saved to: {stats_json.relative_to(ROOT_DIR)}")
     print("\nData generation complete!")
