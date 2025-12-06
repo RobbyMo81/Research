@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__MCP_DOCKER__start_process",
+      "Bash(python:*)",
+      "mcp__MCP_DOCKER__edit_block",
+      "Bash(ls:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

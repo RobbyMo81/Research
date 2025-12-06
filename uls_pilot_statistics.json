@@ -1,0 +1,107 @@
+{
+  "descriptive_stats": {
+    "count": {
+      "Control": 30.0,
+      "Hybrid": 30.0,
+      "Loci": 30.0,
+      "Sung": 30.0
+    },
+    "mean": {
+      "Control": 59.41077850695683,
+      "Hybrid": 75.81191162681351,
+      "Loci": 66.45352997955065,
+      "Sung": 67.88893992689152
+    },
+    "std": {
+      "Control": 14.024423519976743,
+      "Hybrid": 14.517208861601066,
+      "Loci": 12.689805870271282,
+      "Sung": 15.341582947191766
+    },
+    "min": {
+      "Control": 25.265169495482844,
+      "Hybrid": 40.26061173055298,
+      "Loci": 31.749673735485114,
+      "Sung": 18.63292965612797
+    },
+    "25%": {
+      "Control": 50.53082071671476,
+      "Hybrid": 67.77344106397695,
+      "Loci": 60.38966767632188,
+      "Sung": 63.005364197491915
+    },
+    "50%": {
+      "Control": 61.534870612258,
+      "Hybrid": 76.97937370736892,
+      "Loci": 65.35433502447299,
+      "Sung": 68.87019476226607
+    },
+    "75%": {
+      "Control": 66.98489129028336,
+      "Hybrid": 85.21005689100744,
+      "Loci": 72.47661640368062,
+      "Sung": 75.13780559086848
+    },
+    "max": {
+      "Control": 85.56642595465803,
+      "Hybrid": 100.0,
+      "Loci": 94.88901969039739,
+      "Sung": 95.18417567108187
+    }
+  },
+  "anova": {
+    "F": 6.753797461717177,
+    "p": 0.00030745128653881555,
+    "outcome": "total_immediate"
+  },
+  "effect_sizes": [
+    {
+      "comparison": "Control vs Sung",
+      "cohens_d": -0.5768333567474501,
+      "t_statistic": -2.2340659842197956,
+      "p_value": 0.02934825119950742,
+      "mean_diff": -8.478161419934693,
+      "outcome": "total_immediate"
+    },
+    {
+      "comparison": "Control vs Loci",
+      "cohens_d": -0.5266091535895974,
+      "t_statistic": -2.039548481812894,
+      "p_value": 0.045959546099760384,
+      "mean_diff": -7.042751472593821,
+      "outcome": "total_immediate"
+    },
+    {
+      "comparison": "Control vs Hybrid",
+      "cohens_d": -1.1491066019503546,
+      "t_statistic": -4.450470732370718,
+      "p_value": 3.946735996157535e-05,
+      "mean_diff": -16.40113311985668,
+      "outcome": "total_immediate"
+    },
+    {
+      "comparison": "Sung vs Loci",
+      "cohens_d": 0.10195926099889231,
+      "t_statistic": 0.3948865198403253,
+      "p_value": 0.694375127021229,
+      "mean_diff": 1.4354099473408723,
+      "outcome": "total_immediate"
+    },
+    {
+      "comparison": "Sung vs Hybrid",
+      "cohens_d": -0.5304939185913486,
+      "t_statistic": -2.0545941119686066,
+      "p_value": 0.04443283501106702,
+      "mean_diff": -7.9229716999219875,
+      "outcome": "total_immediate"
+    },
+    {
+      "comparison": "Loci vs Hybrid",
+      "cohens_d": -0.6863923448556332,
+      "t_statistic": -2.6583861205901256,
+      "p_value": 0.010130242737069783,
+      "mean_diff": -9.35838164726286,
+      "outcome": "total_immediate"
+    }
+  ]
+}
